@@ -5,7 +5,7 @@ import { FaInstagram, FaWhatsapp, FaTiktok, FaFacebookF, FaEnvelope } from 'reac
 const Hero = () => {
   const socialLinks = [
     { name: 'Instagram', icon: <FaInstagram />, color: 'hover:text-pink-500', url: 'https://www.instagram.com/diamond.center22' },
-    { name: 'WhatsApp', icon: <FaWhatsapp />, color: 'hover:text-green-500', url: 'https://wa.me/201000436389' },
+    { name: 'WhatsApp', icon: <FaWhatsapp />, color: 'hover:text-green-500', url: 'https://wa.me/201009529990' },
     { name: 'TikTok', icon: <FaTiktok />, color: 'hover:text-gray-400', url: 'https://www.tiktok.com/@diamond.dental.centers' },
     { name: 'Facebook', icon: <FaFacebookF />, color: 'hover:text-blue-500', url: 'https://www.facebook.com/profile.php?id=61559482952900&sk=photos' },
   ];
