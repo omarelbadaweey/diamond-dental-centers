@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Staff = () => {
   const doctors = [
     { name: "د. عبد المنعم سمير", img: "/img/dr4.jpg" },
@@ -7,7 +5,7 @@ const Staff = () => {
     { name: "د. محمد القلا", img: "/img/dr2.jpg" },
     { name: "د. مؤمن جابر", img: "/img/dr3.jpg" },
     { name: "د. احمد خليفة", img: "/img/dr5.jpg" },
-    { name: "د. اسلام على طلاب", img: "/img/dr6.jpg" },
+    { name: "د. اسلام على تعلب", img: "/img/dr6.jpg" },
     { name: "د. سامح ياسين", img: "/img/dr7.jpg" },
     { name: "د. محمد مختار", img: "/img/dr8.jpg" },
     { name: "د. بسمه ايمن", img: "/img/dr9.jpg" },
@@ -21,7 +19,7 @@ const Staff = () => {
         {doctors.map((doc, i) => (
           <div key={i} className="group relative w-72 h-96 overflow-hidden border border-[#c5a059]/30">
             <div className="absolute inset-0  group transition duration-500"></div>
-            <Image src={doc.img} alt={doc.name} height={384} width={288} className="w-full object-cover group-hover:scale-110 group-hover:-translate-4 h-full transition duration-500" />
+            <img src={doc.img} alt={doc.name} className="w-full object-cover group-hover:scale-110 group-hover:-translate-4 h-full transition duration-500" />
             <div className="absolute bottom-0 w-full bg-[#0a0a0a] p-4 text-center border-t border-[#c5a059]">
               <h3 className="text-[#c5a059] font-bold">{doc.name}</h3>
             </div>

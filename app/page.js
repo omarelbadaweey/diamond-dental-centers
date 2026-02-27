@@ -42,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <main >
+    <main className="bg-linear-to-r from-gray-900 to-black ">
       {/* حقن الـ Schema في الصفحة */}
       <script
         type="application/ld+json"

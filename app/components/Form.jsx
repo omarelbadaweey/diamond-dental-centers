@@ -370,7 +370,7 @@ const BookingForm = () => {
 
     try {
       // إرسال البيانات (تأكد من وجود NEXT_PUBLIC_ قبل اسم المتغير في .env)
-      const response = await axios.post(process.env.NEXT_PUBLIC_API_DATA, formData);
+      const response = await axios.post("https://diamond-back-nu.vercel.app/api/data", formData);
 
       // في axios: الوصول لهنا يعني نجاح العملية (Status 2xx)
       toast.update(id, { 
@@ -478,7 +478,7 @@ const BookingForm = () => {
             <option>د. محمد القلا</option>
             <option>د. مؤمن جابر</option>
             <option>د. احمد خليفة</option>
-            <option>د. اسلام على طلاب</option>
+            <option>د. اسلام على تعلب</option>
             <option>د. سامح ياسين</option>
             <option>د. محمد مختار</option>
             <option>د. بسمه ايمن</option>
