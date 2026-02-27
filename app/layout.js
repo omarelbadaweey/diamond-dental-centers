@@ -52,7 +52,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ar" dir="rtl" className="scroll-smooth">
+    <html lang="ar"  className="scroll-smooth">
       <body className={`${cairo.className} bg-[#050505] text-white antialiased`}>
         {children}
       </body>

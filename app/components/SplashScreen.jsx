@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -12,7 +12,7 @@ const SplashScreen = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const title = "DIAMOND DENTAL CENTERS";
+  const title = "DIAMOND_ DENTAL_ CENTERS...";
 
   // إعدادات انيميشن الحروف
   const containerVars = {
