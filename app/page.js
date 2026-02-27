@@ -6,7 +6,7 @@ import Staff from "./components/Staff";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: 'Diamond Dental Centers - مراكز دايموند للأسنان | شربين وبلقاس',
+  title: 'Diamond Dental Centers - مراكز دايموند للأسنان | شربين دكرنس',
   description: 'أفضل رعاية لأسنانك في Diamond Dental Centers بشربين وبلقاس. متخصصون في زراعة وتجميل الأسنان بأحدث التقنيات. احجز موعدك الآن.',
   keywords: 'دايموند للأسنان, Diamond Dental Centers, دكتور أسنان شربين, دكتور أسنان بلقاس, زراعة أسنان, تجميل أسنان بلقاس, تقويم أسنان شربين',
   alternates: {
