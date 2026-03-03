@@ -4,3 +4,36 @@ html {
   scrollbar-color:#b8a145  #000000  ;
   scroll-behavior: smooth;
 }
+
+
+/* تخصيص شريط التقدم (Progress Bar) ليكون ذهبي */
+.Toastify__progress-bar--success,
+.Toastify__progress-bar--default,
+.Toastify__progress-bar--controlled {
+  background: linear-gradient(to right, #c5a059, #f1d592) !important;
+  height: 3px !important;
+  box-shadow: 0 0 10px rgba(197, 160, 89, 0.5) !important;
+}
+
+/* تخصيص زر الإغلاق (X) ليكون ذهبي فاتح */
+.Toastify__close-button {
+  color: #f1d592 !important;
+  opacity: 0.7 !important;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1 !important;
+}
+
+/* تخصيص أيقونة الـ Loading (الدوارة) لتكون ذهبية */
+.Toastify__spinner {
+  border-color: #1a1a1a !important; /* لون الخلفية الدوارة */
+  border-right-color: #c5a059 !important; /* لون الجزء المتحرك ذهبي */
+}
+
+/* تعديل بسيط لمكان التوست ليكون أكثر أناقة */
+.Toastify__toast-container {
+  width: auto !important;
+  min-width: 320px !important;
+  padding: 10px !important;
+}
