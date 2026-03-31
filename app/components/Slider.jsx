@@ -76,7 +76,7 @@ function Slider() {
                   className="relative w-full h-[350px] md:h-[500px] cursor-pointer group"
                   onClick={() => handleTogglePlay(category.id)}
                 >
-                  <video
+                  {/* <video
                     ref={(el) => (videoRefs.current[category.id] = el)}
                     src={category.video}
                     poster={category.poster}
@@ -84,8 +84,25 @@ function Slider() {
                     playsInline
                     muted={false} 
                     className="w-full h-full  bg-black transition-transform duration-700" 
-                  />
+                  /> */}
                   
+                    <video
+  ref={(el) => (videoRefs.current[category.id] = el)}
+  poster={category.poster}
+  preload="metadata"
+  playsInline
+  muted={true} // خلي بالك الـ AutoPlay مش هيشتغل لو الصوت مفتوح في أغلب المتصفحات
+  className="w-full h-full bg-black transition-transform duration-700 " 
+>
+  {/* الحركة دي بتخلي المتصفح يختار أخف نسخة فوراً */}
+  <source src={category.video} type="video/mp4" />
+  
+  {/* لو عندك وقت حول فيديو واحد لـ webm وجرب الفرق المرعب */}
+  {/* <source src={category.videoWebm} type="video/webm" /> */}
+  
+  Your browser does not support the video tag.
+</video>
+
                   <div className={`absolute inset-0 transition-opacity duration-300 ${playingId === category.id ? 'bg-black/10' : 'bg-black/40'}`}></div>
 
                   <div className="absolute inset-0 flex items-center justify-center">
