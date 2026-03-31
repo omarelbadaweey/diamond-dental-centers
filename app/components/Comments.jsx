@@ -67,7 +67,7 @@ const Comments = () => {
           
           <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
             <div className="space-y-2">
-              <label className="text-xs font-bold text-gray-400 flex items-center gap-2 uppercase tracking-widest">
+              <label className="text-sm font-bold text-gray-200 flex items-center gap-2 uppercase tracking-widest">
                 <User size={14} className="text-[#c5a059]" /> الاسم بالكامل
               </label>
               <input 
@@ -80,7 +80,7 @@ const Comments = () => {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold text-gray-400 flex items-center gap-2 uppercase tracking-widest">
+              <label className="text-sm font-bold text-gray-200 flex items-center gap-2 uppercase tracking-widest">
                 <Mail size={14} className="text-[#c5a059]" /> البريد الإلكتروني
               </label>
               <input 
@@ -93,7 +93,7 @@ const Comments = () => {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs font-bold text-gray-400 flex items-center gap-2 uppercase tracking-widest">
+              <label className="text-sm font-bold text-gray-200 flex items-center gap-2 uppercase tracking-widest">
                 <MessageSquare size={14} className="text-[#c5a059]" /> رسالتك
               </label>
               <textarea 

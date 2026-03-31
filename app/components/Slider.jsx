@@ -14,10 +14,10 @@ function Slider() {
   const videoRefs = useRef({});
 
   const categories = [
-    { id: 1, video: "/video/vid-1.mp4", poster: "/img/poster.jpg" },
-    { id: 2, video: "/video/vid-2.mp4", poster: "/img/poster.jpg" },
-    { id: 3, video: "/video/vid-3.mp4", poster: "/img/poster.jpg" },
-    { id: 4, video: "/video/vid-4.mp4", poster: "/img/poster.jpg" },
+    { id: 1, video: "/video/vid-1.mp4", poster: "/img/poster.webp" },
+    { id: 2, video: "/video/vid-2.mp4", poster: "/img/poster.webp" },
+    { id: 3, video: "/video/vid-3.mp4", poster: "/img/poster.webp" },
+    { id: 4, video: "/video/vid-4.mp4", poster: "/img/poster.webp" },
   ];
 
   const handleTogglePlay = (id) => {
