@@ -1,0 +1,21 @@
+{
+  "name": "Diamond Dental Centers",
+  "short_name": "Diamond",
+  "description": "عيادة دايموند لزراعة وتجميل الأسنان",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#c5a059",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

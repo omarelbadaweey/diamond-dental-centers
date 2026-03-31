@@ -1,0 +1,67 @@
+import SplashScreen from "./components/SplashScreen";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Form from "./components/Form";
+import Staff from "./components/Staff";
+import Footer from "./components/Footer";
+import Comments from "./components/Comments";
+import Slider from "./components/Slider";
+import Payment from "./components/Payment";
+
+export const metadata = {
+  title: 'Diamond Dental Centers - مراكز دايموند للأسنان | شربين دكرنس',
+  description: 'أفضل رعاية لأسنانك في Diamond Dental Centers بشربين وبلقاس. متخصصون في زراعة وتجميل الأسنان بأحدث التقنيات. احجز موعدك الآن.',
+  keywords: 'دايموند للأسنان, Diamond Dental Centers, دكتور أسنان شربين, دكتور أسنان بلقاس, زراعة أسنان, تجميل أسنان بلقاس, تقويم أسنان شربين',
+  alternates: {
+    canonical: 'https://www.diamond-dental-centers.com/', 
+  },
+};
+
+export default function Home() {
+  // 2. كود الـ Schema (البيانات المنظمة) عشان تظهر في خريطة جوجل والبحث المحلي
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Diamond Dental Centers - مراكز دايموند للأسنان",
+    "image": "https://www.diamond-dental-centers.com/logo.png",
+    "url": "https://www.diamond-dental-centers.com/",
+    "telephone": "+201009529990", 
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "شربين- خلف المستشفى العام- اعلى ستوديو ماسبيرو",
+        "addressLocality": "شربين",
+        "addressRegion": "الدقهلية",
+        "addressCountry": "EG"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع المستشفى العام- اعلى مطعم اهل الشام",
+        "addressLocality": "دكرنس ",
+        "addressRegion": "الدقهلية",
+        "addressCountry": "EG"
+      }
+    ]
+  };
+
+  return (
+    <main className="bg-linear-to-r from-gray-900 to-black ">
+      {/* حقن الـ Schema في الصفحة */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* components  */}
+      <SplashScreen />
+      <Header />
+      <Hero />
+      <Slider/>
+      <Form />
+      <Staff />
+      <Comments />
+      <Payment />
+      <Footer />
+    </main>
+  );
+}
