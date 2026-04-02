@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 const Staff = () => {
   const doctors = [
-    { name: "د. عبد المنعم سمير", img: "/img/d4.jpeg" },
-    { name: "د. محمد عبد الحميد", img: "/img/d1.jpeg" },
-    { name: "د. محمد القلا", img: "/img/d2.jpeg" },
-    { name: "د. مؤمن جابر", img: "/img/d3.jpeg" },
+    { name: "د. عبد المنعم سمير", img: "/img/d1.jpeg" },
+    { name: "د. محمد عبد الحميد", img: "/img/d2.jpeg" },
+    { name: "د. محمد القلا", img: "/img/d3.jpeg" },
+    { name: "د. مؤمن جابر", img: "/img/d4.jpeg" },
     { name: "د. أحمد خليفة", img: "/img/d5.jpeg" },
     { name: "د. إسلام على تعلب", img: "/img/d6.jpeg" },
     { name: "د. سامح ياسين", img: "/img/d7.jpeg" },
