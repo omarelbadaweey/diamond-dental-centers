@@ -58,7 +58,7 @@ const Comments = () => {
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
         
         {/* فورم إضافة تعليق - التصميم الذهبي */}
-        <div className="lg:col-span-1 bg-[#0a0a0a] p-8 rounded-3xl shadow-2xl h-fit border border-[#c5a059]/70 relative overflow-hidden">
+        <div className="lg:col-span-1 bg-[#0a0a0a]/70 p-8 rounded-3xl shadow-2xl h-fit border border-[#c5a059]/70 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-24 h-24 bg-[#c5a059]/5 blur-3xl rounded-full -mr-10 -mt-10"></div>
           
           <h3 className="text-2xl font-black text-[#c5a059] mb-8 flex items-center gap-2">

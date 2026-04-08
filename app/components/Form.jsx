@@ -172,6 +172,7 @@ const BookingForm = () => {
         <h2 className="text-[#c5a059] text-3xl mb-8 text-center font-serif">
           احجز موعدك الآن
         </h2>
+        {/* <p className="text-red-500 text-[12px] text-center -mt-7 border border-t-transparent mb-3 w-fit mx-auto border-white ">ملحوطه الحجز بشكل اسبوعى ف حاله الحجز ف الاسبوع القادم تواصل معنا</p> */}
 
         <form
           onSubmit={handleSubmit}
@@ -272,12 +273,17 @@ const BookingForm = () => {
             <option value="" hidden>
                 اختر الخدمة - (اختيارى)  
             </option>
-            <option>تبييض أسنان</option>
-            <option>زراعة أسنان</option>
-            <option>هوليود سمايل</option>
-            <option>تقويم أسنان</option>
+            <option>كشف</option>
+            <option>متابعه</option>
+            <option>ازاله جير</option>
+            <option>حشو عادى</option>
             <option>حشو عصب</option>
-            <option>تنظيف جير</option>
+            <option> تركيبات</option>
+            <option> تقويم</option>
+            <option> زراعه</option>
+            <option> خلع</option>
+            <option>تبييض بالليزر</option>
+            <option>حشو اطفال</option>
           </select>
 
           <select
