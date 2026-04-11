@@ -44,6 +44,29 @@ export default function Home() {
     ]
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما هي فروع مراكز دايموند للأسنان؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "لدينا فرعان مجهزان بأحدث التقنيات في محافظة الدقهلية: فرع شربين (خلف المستشفى العام) وفرع دكرنس (شارع المستشفى العام أعلى مطعم أهل الشام)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل يتوفر تجميل وزراعة أسنان في المركز؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم، نحن متخصصون في زراعة وتجميل الأسنان، تقويم الأسنان، والتركيبات الثابتة والمتحركة باستخدام أحدث الأجهزة العالمية."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="bg-linear-to-r from-gray-900 to-black ">
       {/* حقن الـ Schema في الصفحة */}
