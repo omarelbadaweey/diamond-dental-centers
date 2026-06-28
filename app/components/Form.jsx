@@ -1,5 +1,4 @@
 "use client";
-
 import axios from "axios";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -16,103 +15,6 @@ const BookingForm = () => {
     branch: "", // الحقل الجديد
   });
   const [loading, setLoading] = useState(false);
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   // فحص رقم الهاتف المصري
-  //   if (formData.phoneNumber.length !== 11 || !formData.phoneNumber.startsWith('01')) {
-  //     return toast.error('يرجى إدخال رقم هاتف مصري صحيح (11 رقم)');
-  //   }
-
-  //   setLoading(true);
-  //   const id = toast.loading("جاري تسجيل حجزك في Diamond Centers...");
-
-  //   try {
-
-  //     const response = await axios.post("http://localhost:5000/api/data", formData);
-
-  //     // في axios: الوصول لهنا يعني نجاح العملية (Status 2xx)
-  //     toast.update(id, {
-  //       render: "تم تسجيل الحجز بنجاح! 🎉",
-  //       type: "success",
-  //       isLoading: false,
-  //       autoClose: 3000
-  //     });
-
-  //     // تصغير الفورم
-  //     setFormData({ fullName: '', phoneNumber: '', select: '', day: '', time: '', doctorName: '', branch: '' });
-
-  //   } catch (error) {
-  //     console.error("Axios Error:", error);
-
-  //     // قراءة رسالة الخطأ من السيرفر أو عرض رسالة افتراضية
-  //     const errorMsg = error.response?.data?.message || "فشل الاتصال بالسيرفر، تواصل معنا واتساب";
-
-  //     toast.update(id, {
-  //       render: errorMsg,
-  //       type: "error",
-  //       isLoading: false,
-  //       autoClose: 3000
-  //     });
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
-  //   const handleSubmit = async (e) => {
-  //     e.preventDefault();
-
-  //     if (formData.phoneNumber.length !== 11 || !formData.phoneNumber.startsWith('01')) {
-  //       return toast.error('يرجى إدخال رقم هاتف مصري صحيح (11 رقم)');
-  //     }
-
-  //     setLoading(true);
-  //     // تأكد إن الـ id متخزن صح
-  //     const toastId = toast.loading("جاري تسجيل حجزك في Diamond Centers...");
-
-  //     try {
-  // const toastId = toast.loading("جاري تسجيل حجزك في Diamond Centers...");
-
-  // try {
-  //   await axios.post("http://localhost:5000/api/data", formData);
-
-  //   toast.dismiss(toastId); // اقفل القديم
-
-  //   toast.success("تم تسجيل الحجز بنجاح! 🎉", {
-  //     autoClose: 3000
-  //   });
-
-  // } catch (error) {
-  //   const errorMsg = error.response?.data?.message || "فشل الاتصال بالسيرفر";
-
-  //   toast.dismiss(toastId); // اقفل القديم برضه
-
-  //   toast.error(errorMsg, {
-  //     autoClose: 3000
-  //   });
-  // }
-
-  //       setFormData({ fullName: '', phoneNumber: '', select: '', day: '', time: '', doctorName: '', branch: '' });
-
-  //     } catch (error) {
-  //       console.error("Axios Error:", error);
-  //       const errorMsg = error.response?.data?.message || "فشل الاتصال بالسيرفر، تواصل معنا واتساب";
-
-  //       // الحل الجذري هنا:
-  //       toast.update(toastId, {
-  //         render: errorMsg,
-  //         type: "error", // تغيير النوع لـ Error بيشيل الـ Spinner تلقائياً في معظم الإصدارات
-  //         isLoading: false, // تأكيد غلق الـ Loading
-  //         autoClose: 3000,
-  //         closeOnClick: true,
-  //         closeButton: true
-  //       });
-
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -162,7 +64,7 @@ const BookingForm = () => {
   return (
     <section
       id="form"
-      className="pb-14 relative overflow-hidden px-4"
+      className="pb-14 relative overflow-hidden px-4 scroll-mt-24"
       dir="rtl"
     >
 

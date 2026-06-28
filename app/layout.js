@@ -2,7 +2,8 @@ import "./globals.css";
 import { Cairo } from "next/font/google";
 import InstallBanner from "./components/InstallBanner";
 import { ToastContainer } from "react-toastify";
-
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 const cairo = Cairo({
   subsets: ["arabic"],
   weight: ["300", "400", "500", "700"],
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" className="scroll-smooth">
       <body className={`${cairo.className} bg-[#050505] text-white antialiased`}>
+        <Header />
         {children}
         <ToastContainer
           rtl
@@ -68,6 +70,7 @@ export default function RootLayout({ children }) {
           newestOnTop
         />
         <InstallBanner />
+        <Footer />
       </body>
     </html>
   );

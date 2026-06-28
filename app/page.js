@@ -1,12 +1,11 @@
 import SplashScreen from "./components/SplashScreen";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Form from "./components/Form";
-import Staff from "./components/Staff";
-import Footer from "./components/Footer";
-import Comments from "./components/Comments";
+// import Staff from "./components/Staff";
+// import Footer from "./components/Footer";
+// import Comments from "./components/Comments";
 import Slider from "./components/Slider";
-import Payment from "./components/Payment";
+// import Payment from "./components/Payment";
 
 export const metadata = {
   title: 'Diamond Dental Centers - مراكز دايموند للأسنان | شربين دكرنس',
@@ -76,15 +75,15 @@ export default function Home() {
       />
 
       {/* components  */}
-      <SplashScreen />
-      <Header />
+      {/* <SplashScreen /> */}
+      
       <Hero />
       <Slider/>
       <Form />
-      <Staff />
-      <Comments />
-      <Payment />
-      <Footer />
+      {/* <Staff /> */}
+      {/* <Comments /> */}
+      {/* <Payment /> */}
+      
     </main>
   );
 }
