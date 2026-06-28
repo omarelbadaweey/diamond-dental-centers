@@ -75,7 +75,7 @@ export default function Home() {
       />
 
       {/* components  */}
-      {/* <SplashScreen /> */}
+      <SplashScreen />
       
       <Hero />
       <Slider/>
