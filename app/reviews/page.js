@@ -3,9 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { MessageSquare, Send, User, Mail, Quote } from 'lucide-react';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
+import Back from '../components/Back';
 const Reviews = () => {
   const [comments, setComments] = useState([]);
   const [formData, setFormData] = useState({ email: '', message: '', name: '' });
@@ -54,8 +55,9 @@ const Reviews = () => {
   return (
     <section className="py-34 font-sans text-white" dir="rtl" id='comments'>
       {/* <ToastContainer rtl={true} position="top-right" theme="dark" /> */}
+      <Back/>
       
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12 mt-5">
         
         {/* فورم إضافة تعليق - التصميم الذهبي */}
         <div className="lg:col-span-1 bg-[#0a0a0a]/70 p-8 rounded-3xl shadow-2xl h-fit border border-[#c5a059]/70 relative overflow-hidden">

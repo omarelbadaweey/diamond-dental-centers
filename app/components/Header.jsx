@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
  import React from 'react'
@@ -13,13 +14,16 @@ import { usePathname } from "next/navigation";
 
        <nav className="fixed w-full z-50 bg-blue-900/0 backdrop-blur-md border-b border-[#c5a059]/20 py-3 px-10 flex justify-between items-center">
     <div className="w-14 h-14 outline-2 outline-[#c5a059] rounded-lg content-center">
-      <Image
+      <Link href={"/"}>
+              <Image
         src="/logo.png"
         alt="Diamond Dental Centers Logo"
         width={56}
         height={56}
         className="w-full h-full mx-auto rounded-lg"
       />
+      
+      </Link>
     </div>
 
     <a

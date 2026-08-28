@@ -101,7 +101,7 @@ function Slider() {
             {categories.map((category) => (
               <SwiperSlide key={category.id}>
                 <div
-                  className="relative w-full h-[350px] md:h-[500px] cursor-pointer group"
+                  className="relative w-full h-87.5 md:h-125 cursor-pointer group"
                   onClick={() => handleTogglePlay(category.id)}
                 >
 

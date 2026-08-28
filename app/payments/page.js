@@ -2,12 +2,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Wallet, QrCode, Banknote, Smartphone } from 'lucide-react';
+import Back from '../components/Back';
 
 const Payment = () => {
   const [method, setMethod] = useState('cash'); // 'cash' or 'instapay'
 
   return (
     <section className=" pb-10 pt-24 text-white" dir="rtl">
+      <Back/>
       <div className="container mx-auto px-4">
         {/* العناوين */}
         <div className="text-center mb-6">

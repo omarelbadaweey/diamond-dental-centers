@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Back from "../components/Back";
 
 const Staff = () => {
   const doctors = [
@@ -18,6 +19,7 @@ const Staff = () => {
 
   return (
     <section className="pb-16 pt-26" dir="rtl">
+      <Back/>
       <h2 className="text-center text-[#c5a059] text-4xl mb-2 font-serif">
         نخبة الأطباء
       </h2>
